@@ -1,20 +1,15 @@
 import Footer from "components/Footer";
-import HeroSection from "components/home/HeroSection";
 import Layout from "components/Layout";
 import Navbar from "components/Navbar";
 import React from "react";
 
-const Home = () => {
-  return (
-    <div>
-      <HeroSection />
-    </div>
-  );
+const Contact = () => {
+  return <div>Contact us</div>;
 };
 
-export default Home;
+export default Contact;
 
-Home.getLayout = function getLayout(page) {
+Contact.getLayout = function getLayout(page) {
   return (
     <Layout>
       <Navbar />
