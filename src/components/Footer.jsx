@@ -1,7 +1,184 @@
 import React from "react";
+import styled from "styled-components";
+import Link from "next/link";
+import Logo from "../../public/assets/logo.svg";
+import FacebookLogo from "../../public/assets/facebook-logo.svg";
+import InstaLogo from "../../public/assets/insta-logo.svg";
+import TwitterLogo from "../../public/assets/twitter-logo.svg";
+import EnterIcon from "../../public/assets/enter-icon.svg";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <View>
+      <div className='content'>
+        <div className='col1'>
+          <div className='logo-view'>
+            <Logo />
+          </div>
+          <p>
+            Adding value to our Client by solving their mobility needs through
+            tech enabled services
+          </p>
+          <div className='socials'>
+            <div className='icons'>
+              <a href='http://' target='_blank' rel='noopener noreferrer'>
+                <FacebookLogo />
+              </a>
+              <a href='http://' target='_blank' rel='noopener noreferrer'>
+                <InstaLogo />
+              </a>
+              <a href='http://' target='_blank' rel='noopener noreferrer'>
+                <TwitterLogo />
+              </a>
+            </div>
+            <p>©{new Date().getFullYear()}. Drive45.ng</p>
+          </div>
+        </div>
+        <div className='col2'>
+          <Link href='/about'>
+            <a>About Us</a>
+          </Link>
+          <Link href='/service'>
+            <a>Services</a>
+          </Link>
+          <Link href='/contact'>
+            <a>Contact Us</a>
+          </Link>
+          <a href='http://' target='_blank' rel='noopener noreferrer'>
+            Terms of Use
+          </a>
+          <a href='http://' target='_blank' rel='noopener noreferrer'>
+            Privacy Policy
+          </a>
+        </div>
+
+        <div className='newsletter'>
+          <h3>Newsletter</h3>
+          <p>
+            Sign up now for our mailing list to get all latest news & updates
+            from Drive45.ng
+          </p>
+          <input type='email' name='email' placeholder='johndoe@gmail.com' />
+          <button>
+            Subscribe <EnterIcon className='icon' />
+          </button>
+        </div>
+      </div>
+    </View>
+  );
 };
 
 export default Footer;
+
+const View = styled.footer`
+  width: 100vw;
+  height: 400px;
+  background-color: #f3f2f2;
+
+  .content {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 40px 0;
+    display: flex;
+
+    .newsletter {
+      width: 483px;
+      height: 353px;
+      position: absolute;
+      top: -50px;
+      right: 0;
+      background-color: #ffc500;
+      border-radius: 25px;
+      padding: 30px 40px;
+
+      h3 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 23.8px;
+        margin-bottom: 20px;
+      }
+
+      input {
+        width: 100%;
+        height: 50px;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        padding: 15px 20px;
+
+        &:placeholder {
+          color: #e3e3e3;
+          font-weight: 700;
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 50px;
+        margin-top: 25px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 7px;
+        background-color: ${(props) => props.theme.colors.green};
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: ${(props) => props.theme.colors.white};
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+
+    .col2 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 60px;
+      margin-top: 30px;
+
+      a {
+        margin-bottom: 25px;
+        color: ${(props) => props.theme.colors.black};
+        font-weight: 700;
+      }
+    }
+
+    .col1 {
+      p {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-top: 8px;
+        margin-bottom: 60px;
+        max-width: 400px;
+      }
+
+      .socials {
+        display: flex;
+        align-items: center;
+
+        .icons {
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+
+          svg {
+            margin-right: 10px;
+          }
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+`;

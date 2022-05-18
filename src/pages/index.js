@@ -1,5 +1,8 @@
 import Footer from "components/Footer";
+import AssetSection from "components/home/AssetSection";
+import BrandSection from "components/home/BrandSection";
 import HeroSection from "components/home/HeroSection";
+import StatsSction from "components/home/StatsSections";
 import WhySction from "components/home/WhySction";
 import Layout from "components/Layout";
 import Navbar from "components/Navbar";
@@ -10,6 +13,9 @@ const Home = () => {
     <div>
       <HeroSection />
       <WhySction />
+      <StatsSction />
+      <AssetSection />
+      <BrandSection />
     </div>
   );
 };
