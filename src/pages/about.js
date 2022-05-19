@@ -1,10 +1,15 @@
+import HeroSection from "components/about/HeroSection";
 import Footer from "components/Footer";
 import Layout from "components/Layout";
 import Navbar from "components/Navbar";
 import React from "react";
 
 const About = () => {
-  return <div>About</div>;
+  return (
+    <div>
+      <HeroSection />
+    </div>
+  );
 };
 
 export default About;
