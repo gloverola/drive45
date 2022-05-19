@@ -1,4 +1,6 @@
+import AdvantageSection from "components/about/AdvantageSection";
 import HeroSection from "components/about/HeroSection";
+import PeopleSection from "components/about/PeopleSection";
 import Footer from "components/Footer";
 import Layout from "components/Layout";
 import Navbar from "components/Navbar";
@@ -8,6 +10,8 @@ const About = () => {
   return (
     <div>
       <HeroSection />
+      <AdvantageSection />
+      <PeopleSection />
     </div>
   );
 };

@@ -2153,6 +2153,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"classnames@npm:^2.2.6":
+  version: 2.3.1
+  resolution: "classnames@npm:2.3.1"
+  checksum: 14db8889d56c267a591f08b0834989fe542d47fac659af5a539e110cc4266694e8de86e4e3bbd271157dbd831361310a8293e0167141e80b0f03a0f175c80960
+  languageName: node
+  linkType: hard
+
 "color-convert@npm:^1.9.0":
   version: 1.9.3
   resolution: "color-convert@npm:1.9.3"
@@ -2440,8 +2447,10 @@ __metadata:
     eslint: 8.15.0
     eslint-config-next: 12.1.6
     next: 12.1.6
+    prop-types: ^15.8.1
     react: 18.1.0
     react-dom: 18.1.0
+    react-elastic-carousel: ^0.11.5
     react-is: ^18.1.0
     styled-components: ^5.3.5
   languageName: unknown
@@ -3854,7 +3863,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -3891,6 +3900,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-elastic-carousel@npm:^0.11.5":
+  version: 0.11.5
+  resolution: "react-elastic-carousel@npm:0.11.5"
+  dependencies:
+    classnames: ^2.2.6
+    react-only-when: ^1.0.2
+    react-swipeable: ^5.5.1
+    resize-observer-polyfill: 1.5.0
+  peerDependencies:
+    prop-types: ^15.5.4
+    react: 15 - 17
+    react-dom: 15 - 17
+    styled-components: ^5.1.0
+  checksum: 2a823cd8cbea006b4cfc92eac3f47df32eeb77109baad5e6edc1f5eb09d1b5d838c3110c3212ca84f434b96bc9c0caf0bb05c23ddbf8c751caf2ef52cdd5915a
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1, react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -3902,6 +3928,28 @@ __metadata:
   version: 18.1.0
   resolution: "react-is@npm:18.1.0"
   checksum: d206a0fe6790851bff168727bfb896de02c5591695afb0c441163e8630136a3e13ee1a7ddd59fdccddcc93968b4721ae112c10f790b194b03b35a3dc13a355ef
+  languageName: node
+  linkType: hard
+
+"react-only-when@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "react-only-when@npm:1.0.2"
+  peerDependencies:
+    prop-types: ^15.5.4
+    react: ^15.0.0 || ^16.0.0
+    react-dom: ^15.0.0 || ^16.0.0
+  checksum: 2d0e3d58bc16ce076298d03eac683d988022779e33c74591253dfe9715bfbc1154e10568d170de31b3d2b8e2c26b3b0fd53061b46af0c7e4eea9e6374cad37e9
+  languageName: node
+  linkType: hard
+
+"react-swipeable@npm:^5.5.1":
+  version: 5.5.1
+  resolution: "react-swipeable@npm:5.5.1"
+  dependencies:
+    prop-types: ^15.6.2
+  peerDependencies:
+    react: ^16.0.0-0
+  checksum: 474e281c619a4ca61cede4a1c9acb712241c16c1d226145cc3af66ac77525b585b510739879dc5404ead280fcd606e5b3ed26ddd76d9eb853bf4b11578201d4b
   languageName: node
   linkType: hard
 
@@ -3993,6 +4041,13 @@ __metadata:
   bin:
     regjsparser: bin/parser
   checksum: d069b932491761cda127ce11f6bd2729c3b1b394a35200ec33f1199e937423db28ceb86cf33f0a97c76ecd7c0f8db996476579eaf0d80a1f74c1934f4ca8b27a
+  languageName: node
+  linkType: hard
+
+"resize-observer-polyfill@npm:1.5.0":
+  version: 1.5.0
+  resolution: "resize-observer-polyfill@npm:1.5.0"
+  checksum: ecc6aab5d4f967f1b76cee0748c1967c8b6b5d8c4393764ca3b788dbd15c0f846326c4ebff9f4f39aba45fea8016cd42bb95e28e8fab1d14349e173790c58133
   languageName: node
   linkType: hard
 

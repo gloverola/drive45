@@ -1,9 +1,9 @@
 const size = {
-  phone: "480px",
-  tablet: "835px",
-  laptop: "1024px",
+  phone: "600px",
+  tablet: "768px",
+  laptop: "992px",
   desktop: "1200px",
-  tv: "1201px",
+  tv: "1400px",
 };
 
 export const device = {
