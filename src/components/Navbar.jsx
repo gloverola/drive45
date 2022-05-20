@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import styled from "styled-components";
 import { device } from "constants/breakpoints";
 import Logo from "../../public/assets/logo.svg";
+import MobileNavigator from "./MobileNavigator";
+import MenuIcon from "../../public/assets/menu-icon.svg";
 
 const navLinks = [
   {
@@ -26,13 +28,23 @@ const navLinks = [
 
 const Navbar = () => {
   const router = useRouter();
+  const [openNav, setOpenNav] = useState(false);
+
+  const handleOpenNav = () => {
+    setOpenNav(true);
+  };
 
   return (
     <View>
+      <MobileNavigator openNav={openNav} setOpenNav={setOpenNav} />
       <div className='content'>
         <div className='logo-view'>
-          <Logo />
+          <Logo className='icon' />
         </div>
+
+        <button className='menu-icon' onClick={handleOpenNav}>
+          <MenuIcon className='icon' />
+        </button>
 
         <div className='nav-links'>
           {navLinks.map((link) => {
@@ -84,11 +96,35 @@ const View = styled.nav`
       width: 100%;
     }
 
+    .logo-view {
+      .icon {
+        @media ${device.phone} {
+          width: 150px;
+          height: 60px;
+        }
+      }
+    }
+
+    .menu-icon {
+      display: none;
+      border: none;
+      padding: 0;
+      background-color: transparent;
+
+      @media ${device.phone} {
+        display: block;
+      }
+    }
+
     .nav-links {
       display: flex;
       width: 500px;
       align-items: center;
       justify-content: space-between;
+
+      @media ${device.phone} {
+        display: none;
+      }
 
       li {
         text-decoration: none;
