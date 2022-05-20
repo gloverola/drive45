@@ -1,3 +1,4 @@
+import { device } from "constants/breakpoints";
 import React from "react";
 import styled from "styled-components";
 
@@ -67,6 +68,10 @@ const View = styled.section`
   position: relative;
   margin-top: 400px;
 
+  @media ${device.phone} {
+    margin-top: 500px;
+  }
+
   .content {
     width: 1200px;
     height: 100%;
@@ -76,6 +81,11 @@ const View = styled.section`
     justify-content: flex-start;
     flex-direction: column;
 
+    @media ${device.phone} {
+      width: 100%;
+      padding: 0 20px;
+    }
+
     .images {
       width: 100%;
       display: flex;
@@ -83,6 +93,12 @@ const View = styled.section`
       justify-content: center;
       flex-wrap: wrap;
       margin-top: 90px;
+
+      @media ${device.phone} {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
 
       .image {
         width: 319px;
@@ -92,6 +108,13 @@ const View = styled.section`
         margin-right: 40px;
         border: 7px solid rgba(0, 0, 0, 0.09);
         margin-bottom: 30px;
+
+        @media ${device.phone} {
+          width: 40%;
+          height: 122px;
+          border-radius: 10px;
+          margin-right: 20px;
+        }
 
         img {
           width: 100%;
@@ -113,6 +136,11 @@ const View = styled.section`
           bottom: 0px;
           left: 0;
 
+          @media ${device.phone} {
+            height: 64px;
+            border-radius: 0 0 10px 10px;
+          }
+
           span {
             font-size: 1.8rem;
             font-weight: 500;
@@ -120,6 +148,12 @@ const View = styled.section`
             position: absolute;
             bottom: 20px;
             left: 20px;
+
+            @media ${device.phone} {
+              font-size: 1rem;
+              bottom: 10px;
+              left: 10px;
+            }
           }
         }
       }
@@ -130,6 +164,11 @@ const View = styled.section`
         font-weight: 700;
         margin-bottom: 12px;
         text-align: center;
+
+        @media ${device.phone} {
+          font-size: 0.8rem;
+          margin-top: 50px;
+        }
       }
 
       .row {
@@ -140,12 +179,20 @@ const View = styled.section`
         .line {
           width: 214px;
           border: 0.5px solid #5f5f5f;
+
+          @media ${device.phone} {
+            width: 50px;
+          }
         }
 
         h3 {
           font-size: 3rem;
           font-weight: 500;
           margin: 0 20px;
+
+          @media ${device.phone} {
+            font-size: 1.2rem;
+          }
         }
       }
     }

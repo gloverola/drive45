@@ -6,6 +6,7 @@ import FacebookLogo from "../../public/assets/facebook-logo.svg";
 import InstaLogo from "../../public/assets/insta-logo.svg";
 import TwitterLogo from "../../public/assets/twitter-logo.svg";
 import EnterIcon from "../../public/assets/enter-icon.svg";
+import { device } from "constants/breakpoints";
 
 const Footer = () => {
   return (
@@ -75,6 +76,10 @@ const View = styled.footer`
   height: 400px;
   background-color: #f3f2f2;
 
+  @media ${device.phone} {
+    height: 500px;
+  }
+
   .content {
     width: 1200px;
     height: 100%;
@@ -82,6 +87,11 @@ const View = styled.footer`
     position: relative;
     padding: 40px 0;
     display: flex;
+
+    @media ${device.phone} {
+      width: 100%;
+      padding: 140px 20px;
+    }
 
     .newsletter {
       width: 483px;
@@ -93,9 +103,22 @@ const View = styled.footer`
       border-radius: 25px;
       padding: 30px 40px;
 
+      @media ${device.phone} {
+        width: 90%;
+        height: 220px;
+        border-radius: 10px;
+        right: 20px;
+        top: -100px;
+        padding: 20px;
+      }
+
       h3 {
         font-size: 3rem;
         font-weight: 700;
+
+        @media ${device.phone} {
+          font-size: 1rem;
+        }
       }
 
       p {
@@ -103,6 +126,11 @@ const View = styled.footer`
         font-weight: 600;
         line-height: 23.8px;
         margin-bottom: 20px;
+
+        @media ${device.phone} {
+          font-size: 0.8rem;
+          line-height: 16px;
+        }
       }
 
       input {
@@ -113,6 +141,10 @@ const View = styled.footer`
         outline: none;
         background-color: #fff;
         padding: 15px 20px;
+
+        @media ${device.phone} {
+          height: 40px;
+        }
 
         &:placeholder {
           color: #e3e3e3;
@@ -136,6 +168,11 @@ const View = styled.footer`
         color: ${(props) => props.theme.colors.white};
         font-weight: 700;
         text-transform: uppercase;
+
+        @media ${device.phone} {
+          height: 40px;
+          margin-top: 15px;
+        }
       }
     }
 
@@ -145,10 +182,18 @@ const View = styled.footer`
       margin-left: 60px;
       margin-top: 30px;
 
+      @media ${device.phone} {
+        margin-left: 40px;
+      }
+
       a {
         margin-bottom: 25px;
         color: ${(props) => props.theme.colors.black};
         font-weight: 700;
+
+        @media ${device.phone} {
+          font-size: 0.8rem;
+        }
       }
     }
 
@@ -159,11 +204,22 @@ const View = styled.footer`
         margin-top: 8px;
         margin-bottom: 60px;
         max-width: 400px;
+
+        @media ${device.phone} {
+          font-size: 0.8rem;
+          max-width: 200px;
+        }
       }
 
       .socials {
         display: flex;
         align-items: center;
+
+        @media ${device.phone} {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
 
         .icons {
           display: flex;
@@ -172,6 +228,9 @@ const View = styled.footer`
 
           svg {
             margin-right: 10px;
+            @media ${device.phone} {
+              margin-right: 5px;
+            }
           }
         }
 

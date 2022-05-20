@@ -6,6 +6,13 @@ import EngeeLogo from "../../../public/assets/engee-logo.svg";
 import PrimaLogo from "../../../public/assets/prima-logo.svg";
 import BatLogo from "../../../public/assets/bat-logo.svg";
 import LacaseraLogo from "../../../public/assets/lacasera-logo.svg";
+import MonumentLogo2 from "../../../public/assets/monument-logo2.svg";
+import PZLogo2 from "../../../public/assets/pz-logo2.svg";
+import EngeeLogo2 from "../../../public/assets/engee-logo2.svg";
+import PrimaLogo2 from "../../../public/assets/prima-logo2.svg";
+import BatLogo2 from "../../../public/assets/bat-logo2.svg";
+import LacaseraLogo2 from "../../../public/assets/lacasera-logo2.svg";
+import { device } from "constants/breakpoints";
 
 const BrandSection = () => {
   return (
@@ -21,12 +28,20 @@ const BrandSection = () => {
         </div>
 
         <div className='images'>
-          <MonumentLogo className='icon' />
-          <PZLogo />
-          <EngeeLogo className='icon' />
-          <PrimaLogo className='icon' />
-          <BatLogo className='icon' />
-          <LacaseraLogo />
+          <MonumentLogo className='icon logo1' />
+          <PZLogo className='logo2' />
+          <EngeeLogo className='icon logo3' />
+          <PrimaLogo className='icon logo4' />
+          <BatLogo className='icon logo5' />
+          <LacaseraLogo className='logo6' />
+        </div>
+        <div className='images-mobile'>
+          <MonumentLogo2 className='icon logo1' />
+          <PZLogo2 className='logo2' />
+          <EngeeLogo2 className='icon logo3' />
+          <PrimaLogo2 className='icon logo4' />
+          <BatLogo2 className='icon logo5' />
+          <LacaseraLogo2 className='logo6' />
         </div>
       </div>
     </View>
@@ -42,6 +57,10 @@ const View = styled.section`
   margin-top: 150px;
   margin-bottom: 300px;
 
+  @media ${device.phone} {
+    margin-bottom: 200px;
+  }
+
   .content {
     width: 1200px;
     height: 100%;
@@ -51,6 +70,11 @@ const View = styled.section`
     justify-content: flex-start;
     flex-direction: column;
 
+    @media ${device.phone} {
+      width: 100%;
+      padding: 0 20px;
+    }
+
     .images {
       width: 100%;
       display: flex;
@@ -59,8 +83,31 @@ const View = styled.section`
       flex-wrap: wrap;
       margin-top: 90px;
 
+      @media ${device.phone} {
+        display: none;
+      }
+
       .icon {
         margin-right: 20px;
+      }
+    }
+
+    .images-mobile {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      display: none;
+
+      @media ${device.phone} {
+        display: flex;
+      }
+
+      .icon {
+        margin-right: 0px;
+        margin-bottom: 10px;
       }
     }
 
@@ -69,6 +116,10 @@ const View = styled.section`
         font-weight: 700;
         margin-bottom: 12px;
         text-align: center;
+
+        @media ${device.phone} {
+          font-size: 0.8rem;
+        }
       }
 
       .row {
@@ -79,12 +130,20 @@ const View = styled.section`
         .line {
           width: 214px;
           border: 0.5px solid #5f5f5f;
+
+          @media ${device.phone} {
+            width: 50px;
+          }
         }
 
         h3 {
           font-size: 3rem;
           font-weight: 500;
           margin: 0 20px;
+
+          @media ${device.phone} {
+            font-size: 1.2rem;
+          }
         }
       }
     }
