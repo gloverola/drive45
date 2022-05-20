@@ -1,10 +1,15 @@
 import Footer from "components/Footer";
 import Layout from "components/Layout";
 import Navbar from "components/Navbar";
+import HeroSection from "components/services/HeroSection";
 import React from "react";
 
 const Services = () => {
-  return <div>Services</div>;
+  return (
+    <div>
+      <HeroSection />
+    </div>
+  );
 };
 
 export default Services;
