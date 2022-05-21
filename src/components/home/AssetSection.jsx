@@ -46,7 +46,7 @@ const AssetSection = () => {
         <div className='images'>
           {assets?.map((asset) => {
             return (
-              <div className='image'>
+              <div className='image' key={asset?.type}>
                 <img src={asset?.image} alt={asset?.type} />
                 <div className='overlay'>
                   <span>{asset?.type}</span>
