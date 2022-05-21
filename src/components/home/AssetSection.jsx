@@ -181,7 +181,7 @@ const View = styled.section`
           border: 0.5px solid #5f5f5f;
 
           @media ${device.phone} {
-            width: 50px;
+            width: 40px;
           }
         }
 
@@ -191,7 +191,8 @@ const View = styled.section`
           margin: 0 20px;
 
           @media ${device.phone} {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            margin: 0 10px;
           }
         }
       }

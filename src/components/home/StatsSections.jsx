@@ -96,7 +96,7 @@ const View = styled.section`
     right: 0;
 
     @media ${device.phone} {
-      bottom: 10px;
+      bottom: -10px;
     }
 
     img {
