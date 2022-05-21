@@ -4,6 +4,7 @@ import CalendarIcon from "../../../public/assets/calendar-icon.svg";
 import CarsIcon from "../../../public/assets/cars-icon.svg";
 import SettingsIcon from "../../../public/assets/settings-icon.svg";
 import FlowerIcon from "../../../public/assets/flower-icon.svg";
+import { device } from "constants/breakpoints";
 
 const HeroSection = () => {
   return (
@@ -21,7 +22,7 @@ const HeroSection = () => {
           <h3>We have a wide range of services</h3>
           <div className='box-view'>
             <div className='box box1'>
-              <CalendarIcon />
+              <CalendarIcon className='icon' />
               <h3>Fleet Management</h3>
               <p>
                 Drive45 to take over and handle the management of existing
@@ -29,7 +30,7 @@ const HeroSection = () => {
               </p>
             </div>
             <div className='box box2'>
-              <CarsIcon />
+              <CarsIcon className='icon' />
               <h3>Fleet Liquidation</h3>
               <p>
                 Drive45 technicians are very proficient with the Evaluation and
@@ -37,7 +38,7 @@ const HeroSection = () => {
               </p>
             </div>
             <div className='box box3'>
-              <SettingsIcon />
+              <SettingsIcon className='icon' />
               <h3>Fleet Maintenance</h3>
               <p>
                 Drive45 to take over and handle the maintenance of existing
@@ -88,12 +89,21 @@ const View = styled.section`
   position: relative;
   margin-bottom: 100px;
 
+  @media ${device.phone} {
+    padding: 50px 0;
+    margin-bottom: 200px;
+  }
+
   .truck {
     position: absolute;
     top: 900px;
     left: 0;
     width: 800px;
     z-index: 2;
+
+    @media ${device.phone} {
+      top: 1150px;
+    }
   }
 
   .car {
@@ -101,12 +111,22 @@ const View = styled.section`
     bottom: 0px;
     right: 0;
     z-index: 2;
+
+    @media ${device.phone} {
+      bottom: -50px;
+      width: 250px;
+    }
   }
 
   .content {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
+
+    @media ${device.phone} {
+      width: 100%;
+      padding: 0 20px;
+    }
 
     .display {
       width: 100%;
@@ -119,15 +139,31 @@ const View = styled.section`
       padding: 0 100px;
       position: relative;
 
+      @media ${device.phone} {
+        padding: 50px 40px;
+        height: 250px;
+        justify-content: flex-start;
+        border-radius: 20px;
+      }
+
       img {
         position: absolute;
         bottom: -200px;
         right: -50px;
+
+        @media ${device.phone} {
+          right: 0;
+          bottom: -80px;
+        }
       }
 
       h1 {
         font-size: 3rem;
         font-weight: 500;
+
+        @media ${device.phone} {
+          font-size: 1.8rem;
+        }
       }
 
       .line {
@@ -143,10 +179,22 @@ const View = styled.section`
       align-items: flex-start;
       margin-top: 300px;
 
+      @media ${device.phone} {
+        flex-direction: column;
+        margin-top: 100px;
+      }
+
       h3 {
         font-size: 2rem;
         font-weight: 400;
         max-width: 290px;
+
+        @media ${device.phone} {
+          max-width: 100%;
+          text-align: center;
+          font-size: 1rem;
+          margin-bottom: 40px;
+        }
       }
 
       .box-view {
@@ -157,6 +205,13 @@ const View = styled.section`
         margin-left: 40px;
         position: relative;
 
+        @media ${device.phone} {
+          width: 100%;
+          border-radius: 20px;
+          margin-left: 0;
+          margin-top: 30px;
+        }
+
         .box {
           width: 390px;
           height: 400px;
@@ -165,15 +220,41 @@ const View = styled.section`
           border-radius: 38.2798px;
           padding: 40px 50px;
 
+          @media ${device.phone} {
+            width: 200px;
+            height: 210px;
+            border-radius: 20px;
+            padding: 15px;
+          }
+
+          .icon {
+            @media ${device.phone} {
+              display: block;
+            }
+          }
+
           h3 {
             margin: 25px 0;
             font-size: 2.2rem;
             font-weight: 400;
             line-height: 37.9px;
+
+            @media ${device.phone} {
+              font-size: 1rem;
+              margin: 5px 0;
+              line-height: 16px;
+              font-weight: 600;
+              text-align: left;
+            }
           }
 
           p {
             line-height: 21.64px;
+
+            @media ${device.phone} {
+              font-size: 0.7rem;
+              line-height: 16px;
+            }
           }
         }
 
@@ -181,16 +262,29 @@ const View = styled.section`
           position: absolute;
           left: 135px;
           top: -50px;
+
+          @media ${device.phone} {
+            left: 70px;
+          }
         }
         .box2 {
           position: absolute;
           left: 135px;
           bottom: -50px;
+
+          @media ${device.phone} {
+            left: 70px;
+            bottom: 180px;
+          }
         }
         .box3 {
           position: absolute;
           right: -163px;
           top: 190px;
+
+          @media ${device.phone} {
+            right: 50px;
+          }
         }
       }
     }
@@ -209,6 +303,12 @@ const View = styled.section`
         border-radius: 50.9338px;
         position: relative;
 
+        @media ${device.phone} {
+          width: 100%;
+          border-radius: 20px;
+          height: 900px;
+        }
+
         .list {
           width: 100%;
           height: 100%;
@@ -217,7 +317,13 @@ const View = styled.section`
           position: absolute;
           top: -90px;
 
+          @media ${device.phone} {
+            left: 30px;
+            top: -50px;
+          }
+
           left: -300px;
+
           .item {
             width: 520px;
             height: 225px;
@@ -227,10 +333,23 @@ const View = styled.section`
             margin-bottom: 40px;
             padding: 30px 40px;
 
+            @media ${device.phone} {
+              width: 80%;
+              height: 150px;
+              border-radius: 20px;
+              padding: 12px 20px;
+              margin-bottom: 20px;
+            }
+
             p {
               font-size: 1.5rem;
               font-weight: 400;
               margin-top: 20px;
+
+              @media ${device.phone} {
+                font-size: 1rem;
+                margin-top: 0;
+              }
             }
           }
 
@@ -238,6 +357,11 @@ const View = styled.section`
             position: absolute;
             top: 0;
             right: -600px;
+
+            @media ${device.phone} {
+              position: initial;
+              right: 0;
+            }
           }
         }
       }
@@ -247,6 +371,10 @@ const View = styled.section`
       font-size: 2.6rem;
       font-weight: 500;
       margin-top: 200px;
+
+      @media ${device.phone} {
+        font-size: 1.8rem;
+      }
     }
   }
 `;

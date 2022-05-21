@@ -1,3 +1,4 @@
+import { device } from "constants/breakpoints";
 import React from "react";
 import styled from "styled-components";
 
@@ -65,10 +66,21 @@ const View = styled.section`
   position: relative;
   margin-bottom: 100px;
 
+  @media ${device.phone} {
+    padding: 40px 0;
+    padding-bottom: 200px;
+  }
+
   img {
     position: absolute;
     bottom: 50px;
     right: 0;
+
+    @media ${device.phone} {
+      bottom: -70px;
+      width: 300px;
+      height: 260px;
+    }
   }
 
   .content {
@@ -76,10 +88,20 @@ const View = styled.section`
     height: 100%;
     margin: 0 auto;
 
+    @media ${device.phone} {
+      height: 100%;
+      padding: 0 20px;
+    }
+
     h3 {
       font-size: 3rem;
       font-weight: 700;
       margin-bottom: 50px;
+
+      @media ${device.phone} {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
     }
 
     .list {
@@ -91,6 +113,10 @@ const View = styled.section`
         align-items: flex-start;
         padding: 35px 0;
         /* border-bottom: 0.5px solid #5f5f5f; */
+
+        @media ${device.phone} {
+          padding: 20px 0;
+        }
 
         .num-view {
           width: 85px;
@@ -104,9 +130,20 @@ const View = styled.section`
           border: 8px solid #f6c1c1;
           margin-right: 30px;
 
+          @media ${device.phone} {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #f6c1c1;
+            margin-right: 10px;
+          }
+
           span {
             font-size: 2.5rem;
             font-weight: 700;
+
+            @media ${device.phone} {
+              font-size: 1.2rem;
+            }
           }
         }
 
@@ -115,12 +152,23 @@ const View = styled.section`
             max-width: 470px;
             font-size: 1.125rem;
             line-height: 25.6px;
+
+            @media ${device.phone} {
+              font-size: 0.8rem;
+              max-width: 250px;
+              line-height: 16px;
+            }
           }
 
           h3 {
             font-size: 2rem;
-            font-weight: 500;
+            font-weight: 700;
             margin-bottom: 10px;
+
+            @media ${device.phone} {
+              font-size: 1rem;
+              max-width: 250px;
+            }
           }
         }
       }

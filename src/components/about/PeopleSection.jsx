@@ -5,6 +5,7 @@ import PrevIcon from "../../../public/assets/prev-icon.svg";
 import NextIcon from "../../../public/assets/next-icon.svg";
 import WhatsAppLogo from "../../../public/assets/logo_whatsapp.svg";
 import MailLogo from "../../../public/assets/mail-logo.svg";
+import { device } from "constants/breakpoints";
 
 const breakPoints2 = [
   { width: 1, itemsToShow: 2 },
@@ -133,6 +134,11 @@ const View = styled.section`
       background-color: ${(props) => props.theme.colors.white};
       padding-bottom: 100px;
 
+      @media ${device.phone} {
+        flex-direction: column;
+        padding-bottom: 200px;
+      }
+
       p {
         font-size: 1.5rem;
         font-weight: 700;
@@ -149,6 +155,10 @@ const View = styled.section`
         height: 70px;
         border: 1px solid #5f5f5f;
         margin: 0 40px;
+
+        @media ${device.phone} {
+          height: 50px;
+        }
       }
     }
 
@@ -159,6 +169,10 @@ const View = styled.section`
       justify-content: center;
       margin-top: 60px;
       margin-bottom: 100px;
+
+      @media ${device.phone} {
+        margin-bottom: 40px;
+      }
 
       button {
         width: 64px;
@@ -171,6 +185,11 @@ const View = styled.section`
         outline: none;
         margin: 0 15px;
         background-color: ${(props) => props.theme.colors.green};
+
+        @media ${device.phone} {
+          width: 50px;
+          height: 50px;
+        }
       }
     }
 
@@ -185,6 +204,13 @@ const View = styled.section`
       align-items: center;
       box-shadow: 0px 28px 107px rgba(0, 0, 0, 0.04);
 
+      @media ${device.phone} {
+        width: 180px;
+        border-radius: 10px;
+        height: 230px;
+        margin-right: 20px;
+      }
+
       h3 {
         font-size: 1.6rem;
         font-weight: 700;
@@ -192,17 +218,31 @@ const View = styled.section`
         margin-bottom: 12px;
         margin-top: 8px;
         line-height: 29.2px;
+
+        @media ${device.phone} {
+          font-size: 1rem;
+          line-height: 15px;
+        }
       }
       p {
         font-size: 0.8rem;
         font-weight: 400;
         text-align: center;
+
+        @media ${device.phone} {
+          font-size: 0.6rem;
+        }
       }
 
       img {
         width: 226px;
         height: 226px;
         border-radius: 50%;
+
+        @media ${device.phone} {
+          width: 100px;
+          height: 100px;
+        }
       }
     }
   }
@@ -212,11 +252,20 @@ const View = styled.section`
     height: 100%;
     margin: 0 auto;
 
+    @media ${device.phone} {
+      width: 100%;
+      padding: 0 20px;
+    }
+
     .heading {
       p {
         font-weight: 700;
         margin-bottom: 12px;
         text-align: center;
+
+        @media ${device.phone} {
+          font-size: 0.7rem;
+        }
       }
 
       .row {
@@ -227,12 +276,21 @@ const View = styled.section`
         .line {
           width: 214px;
           border: 0.5px solid #5f5f5f;
+
+          @media ${device.phone} {
+            width: 40px;
+          }
         }
 
         h3 {
           font-size: 3rem;
           font-weight: 500;
           margin: 0 20px;
+
+          @media ${device.phone} {
+            font-size: 1rem;
+            font-weight: 700;
+          }
         }
       }
     }

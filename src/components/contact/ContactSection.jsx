@@ -1,3 +1,4 @@
+import { device } from "constants/breakpoints";
 import React from "react";
 import styled from "styled-components";
 import EnterIcon from "../../../public/assets/enter-icon.svg";
@@ -57,10 +58,19 @@ const View = styled.section`
   position: relative;
   margin-bottom: 100px;
 
+  @media ${device.phone} {
+    padding: 50px 0;
+  }
+
   .content {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
+
+    @media ${device.phone} {
+      width: 100%;
+      padding: 0 20px;
+    }
 
     .display {
       width: 100%;
@@ -73,15 +83,31 @@ const View = styled.section`
       padding: 0 100px;
       position: relative;
 
+      @media ${device.phone} {
+        padding: 50px 40px;
+        height: 250px;
+        justify-content: flex-start;
+        border-radius: 20px;
+      }
+
       img {
         position: absolute;
         bottom: -100px;
         right: -30px;
+
+        @media ${device.phone} {
+          right: 0;
+          bottom: -50px;
+        }
       }
 
       h1 {
         font-size: 3rem;
         font-weight: 500;
+
+        @media ${device.phone} {
+          font-size: 1.8rem;
+        }
       }
 
       .line {
@@ -96,11 +122,19 @@ const View = styled.section`
 
       h2 {
         font-size: 3rem;
-        font-weight: 500;
+        font-weight: 700;
+
+        @media ${device.phone} {
+          font-size: 1.5rem;
+        }
       }
 
       p {
         font-size: 1.5rem;
+
+        @media ${device.phone} {
+          font-size: 1rem;
+        }
       }
     }
 
@@ -111,8 +145,17 @@ const View = styled.section`
       justify-content: space-between;
       margin-top: 90px;
 
+      @media ${device.phone} {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+      }
+
       form {
         width: 55%;
+
+        @media ${device.phone} {
+          width: 100%;
+        }
 
         .input {
           width: 100%;
@@ -160,6 +203,12 @@ const View = styled.section`
           text-transform: uppercase;
           font-size: 1.6rem;
 
+          @media ${device.phone} {
+            width: 100%;
+            height: 50px;
+            font-size: 1.2rem;
+          }
+
           .icon {
             margin-left: 20px;
           }
@@ -170,6 +219,11 @@ const View = styled.section`
         width: 40%;
         display: flex;
         justify-content: flex-end;
+
+        @media ${device.phone} {
+          width: 100%;
+        }
+
         img {
           width: 100%;
         }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Logo from "../../public/assets/logo.svg";
-import CloseIcon from "../../public/assets/menu-icon.svg";
+import CloseIcon from "../../public/assets/close-icon.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
