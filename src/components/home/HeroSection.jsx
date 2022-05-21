@@ -76,7 +76,7 @@ const View = styled.section`
   position: relative;
 
   @media ${device.phone} {
-    height: 70vh;
+    height: 63vh;
     padding: 0 20px;
   }
 
@@ -137,7 +137,7 @@ const View = styled.section`
       width: 100%;
       margin-top: 30px;
       padding: 30px;
-      height: 60vh;
+      height: 50vh;
     }
 
     .header {
