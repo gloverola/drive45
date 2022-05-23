@@ -16,7 +16,10 @@ export default Contact;
 
 Contact.getLayout = function getLayout(page) {
   return (
-    <Layout>
+    <Layout
+      pageTitle='Drive45 | Contact Us'
+      description='Your first choice mobility solution'
+    >
       <Navbar />
       {page}
       <Footer />

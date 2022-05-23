@@ -24,7 +24,10 @@ export default Home;
 
 Home.getLayout = function getLayout(page) {
   return (
-    <Layout>
+    <Layout
+      pageTitle='Drive45 | Home'
+      description='Your first choice mobility solution'
+    >
       <Navbar />
       {page}
       <Footer />

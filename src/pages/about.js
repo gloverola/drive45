@@ -20,7 +20,10 @@ export default About;
 
 About.getLayout = function getLayout(page) {
   return (
-    <Layout>
+    <Layout
+      pageTitle='Drive45 | About'
+      description='Your first choice mobility solution'
+    >
       <Navbar />
       {page}
       <Footer />
