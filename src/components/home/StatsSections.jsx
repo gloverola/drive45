@@ -27,7 +27,7 @@ const StatsSction = () => {
             <div className='boxes'>
               <div className='box box1'>
                 <h3>19</h3>
-                <p>Location</p>
+                <p>Locations</p>
               </div>
               <div className='box box2'>
                 <h3>

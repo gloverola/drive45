@@ -18,7 +18,7 @@ Services.getLayout = function getLayout(page) {
   return (
     <Layout
       pageTitle='Drive45 | Services'
-      description='Your first choice mobility solution'
+      description='Drive45 - Your first choice mobility solution'
     >
       <Navbar />
       {page}

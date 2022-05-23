@@ -21,14 +21,14 @@ const Layout = ({ children, pageTitle, description, path }) => {
         <meta property='og:url' content='https://' />
         <meta property='og:title' content={pageTitle} />
         <meta property='og:description' content={description} />
-        <meta property='og:image' content='/ogimage.jpeg' />
+        <meta property='og:image' content='/public/ogimage.jpeg' />
 
         {/* <!-- Twitter --> */}
         <meta property='twitter:card' content='summary_large_image' />
         <meta property='twitter:url' content='' />
         <meta property='twitter:title' content={pageTitle} />
         <meta property='twitter:description' content={description} />
-        <meta property='twitter:image' content='/ogimage.jpeg' />
+        <meta property='twitter:image' content='/public/ogimage.jpeg' />
       </Head>
       <main>
         <View>{children}</View>
