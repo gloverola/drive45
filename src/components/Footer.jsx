@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Link from "next/link";
 import Logo from "../../public/assets/logo.svg";
 import FacebookLogo from "../../public/assets/facebook-logo.svg";
-import InstaLogo from "../../public/assets/insta-logo.svg";
+import LinkedInLogo from "../../public/assets/linkedin-logo.svg";
 import TwitterLogo from "../../public/assets/twitter-logo.svg";
 import EnterIcon from "../../public/assets/enter-icon.svg";
 import { device } from "constants/breakpoints";
@@ -25,8 +25,12 @@ const Footer = () => {
               <a href='http://' target='_blank' rel='noopener noreferrer'>
                 <FacebookLogo />
               </a>
-              <a href='http://' target='_blank' rel='noopener noreferrer'>
-                <InstaLogo />
+              <a
+                href='https://www.linkedin.com/company/drive45-mobility-limited/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <LinkedInLogo />
               </a>
               <a href='http://' target='_blank' rel='noopener noreferrer'>
                 <TwitterLogo />

@@ -45,7 +45,11 @@ const StatsSction = () => {
               <p>Contact Us:</p>
 
               <div className='icons'>
-                <a href='http://' target='_blank' rel='noopener noreferrer'>
+                <a
+                  href='https://wa.me/+2349139378969'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   <WhatsAppLogo />
                 </a>
                 <div className='line'></div>
