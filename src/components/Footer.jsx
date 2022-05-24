@@ -7,10 +7,17 @@ import LinkedInLogo from "../../public/assets/linkedin-logo.svg";
 import TwitterLogo from "../../public/assets/twitter-logo.svg";
 import EnterIcon from "../../public/assets/enter-icon.svg";
 import { device } from "constants/breakpoints";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <View>
+      {router.pathname === "/" ? (
+        <div className='car'>
+          <img src='/assets/car-footer.png' alt='car' />
+        </div>
+      ) : null}
       <div className='content'>
         <div className='col1'>
           <div className='logo-view'>
@@ -79,9 +86,20 @@ const View = styled.footer`
   width: 100vw;
   height: 400px;
   background-color: #f3f2f2;
+  position: relative;
 
   @media ${device.phone} {
     height: 500px;
+  }
+
+  .car {
+    position: absolute;
+    top: -290px;
+    left: 0;
+
+    @media ${device.phone} {
+      display: none;
+    }
   }
 
   .content {
@@ -91,6 +109,7 @@ const View = styled.footer`
     position: relative;
     padding: 40px 0;
     display: flex;
+    padding-top: 60px;
 
     @media ${device.phone} {
       width: 100%;
