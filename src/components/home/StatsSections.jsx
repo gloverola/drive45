@@ -26,17 +26,17 @@ const StatsSction = () => {
           <div className='display'>
             <div className='boxes'>
               <div className='box box1'>
-                <h3>19</h3>
+                <h3>19+</h3>
                 <p>Locations</p>
               </div>
               <div className='box box2'>
                 <h3>
-                  500,000 <br /> <span>kilometers</span>
+                  500,000+ <br /> <span>kilometers</span>
                 </h3>
                 <p>MILEAGE COVERED</p>
               </div>
               <div className='box box3'>
-                <h3>$1.4m</h3>
+                <h3>$1.4m+</h3>
                 <p>VALUE OF ASSETS UNDER MANAGEMENT</p>
               </div>
             </div>

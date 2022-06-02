@@ -5,27 +5,27 @@ import styled from "styled-components";
 const assets = [
   {
     id: "1",
-    type: "2x2",
+    type: "Two wheelers",
     image: "/assets/2x2.png",
   },
   {
     id: "2",
-    type: "4x4",
+    type: "Four wheelers",
     image: "/assets/4x4.png",
   },
   {
     id: "3",
-    type: "6x6",
+    type: "Six wheelers",
     image: "/assets/6x6.png",
   },
   {
     id: "4",
-    type: "8x8",
+    type: "Eight wheelers",
     image: "/assets/8x8.png",
   },
   {
     id: "5",
-    type: "10x10",
+    type: "10 - 12 wheelers",
     image: "/assets/10x10.png",
   },
 ];

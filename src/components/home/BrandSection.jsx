@@ -28,19 +28,19 @@ const BrandSection = () => {
         </div>
 
         <div className='images'>
+          <BatLogo className='icon logo5' />
           <MonumentLogo className='icon logo1' />
           <PZLogo className='logo2' />
           <EngeeLogo className='icon logo3' />
           <PrimaLogo className='icon logo4' />
-          <BatLogo className='icon logo5' />
           <LacaseraLogo className='logo6' />
         </div>
         <div className='images-mobile'>
+          <BatLogo2 className='icon logo5' />
           <MonumentLogo2 className='icon logo1' />
           <PZLogo2 className='logo2' />
           <EngeeLogo2 className='icon logo3' />
           <PrimaLogo2 className='icon logo4' />
-          <BatLogo2 className='icon logo5' />
           <LacaseraLogo2 className='logo6' />
         </div>
       </div>
