@@ -5,6 +5,8 @@ import PZLogo from "../../../public/assets/pz-logo.svg";
 import EngeeLogo from "../../../public/assets/engee-logo.svg";
 import PrimaLogo from "../../../public/assets/prima-logo.svg";
 import BatLogo from "../../../public/assets/bat-logo.svg";
+import JotnaLogo from "../../../public/assets/jotna-logo.svg";
+import JotnaLogo2 from "../../../public/assets/jotna-logo2.svg";
 import LacaseraLogo from "../../../public/assets/lacasera-logo.svg";
 import MonumentLogo2 from "../../../public/assets/monument-logo2.svg";
 import PZLogo2 from "../../../public/assets/pz-logo2.svg";
@@ -32,16 +34,18 @@ const BrandSection = () => {
           <MonumentLogo className='icon logo1' />
           <PZLogo className='logo2' />
           <EngeeLogo className='icon logo3' />
-          <PrimaLogo className='icon logo4' />
-          <LacaseraLogo className='logo6' />
+          <LacaseraLogo className='logo4' />
+          <PrimaLogo className='icon logo6' />
+          <JotnaLogo className='icon logo4' />
         </div>
         <div className='images-mobile'>
           <BatLogo2 className='icon logo5' />
           <MonumentLogo2 className='icon logo1' />
           <PZLogo2 className='logo2' />
-          <EngeeLogo2 className='icon logo3' />
-          <PrimaLogo2 className='icon logo4' />
           <LacaseraLogo2 className='logo6' />
+          <EngeeLogo2 className='icon logo3' />
+          <JotnaLogo2 className='icon logo7' />
+          <PrimaLogo2 className='icon logo4' />
         </div>
       </div>
     </View>
@@ -90,6 +94,10 @@ const View = styled.section`
       .icon {
         margin-right: 20px;
       }
+
+      .logo6 {
+        margin-left: 20px;
+      }
     }
 
     .images-mobile {
@@ -106,8 +114,15 @@ const View = styled.section`
       }
 
       .icon {
-        margin-right: 0px;
-        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+      }
+
+      .logo7 {
+        margin-left: 20px;
+      }
+      .logo6 {
+        margin-left: 20px;
       }
     }
 

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import CalendarIcon from "../../../public/assets/calendar-icon.svg";
 import CarsIcon from "../../../public/assets/cars-icon.svg";
 import SettingsIcon from "../../../public/assets/settings-icon.svg";
+import HireIcon from "../../../public/assets/hire-icon.svg";
 import FlowerIcon from "../../../public/assets/flower-icon.svg";
 import { device } from "constants/breakpoints";
 
@@ -21,29 +22,41 @@ const HeroSection = () => {
         <div className='row'>
           <h3>We have a wide range of services</h3>
           <div className='box-view'>
-            <div className='box box1'>
-              <CalendarIcon className='icon' />
-              <h3>Fleet Management</h3>
-              <p>
-                Drive45 to take over and handle the management of existing
-                customer owned fleet of cars and trucks.
-              </p>
-            </div>
-            <div className='box box2'>
-              <CarsIcon className='icon' />
-              <h3>Fleet Liquidation</h3>
-              <p>
-                Drive45 technicians are very proficient with the Evaluation and
-                Liquidation of all mobile assets with a hassle free process.
-              </p>
-            </div>
-            <div className='box box3'>
-              <SettingsIcon className='icon' />
-              <h3>Fleet Maintenance</h3>
-              <p>
-                Drive45 to take over and handle the maintenance of existing
-                customer owned fleet of cars and trucks.
-              </p>
+            <div className='boxes'>
+              <div className='box box1'>
+                <CalendarIcon className='icon' />
+                <h3>Fleet Management</h3>
+                <p>
+                  Drive45 to take over and handle the management of existing
+                  customer owned fleet of cars and trucks.
+                </p>
+              </div>
+              <div className='box box2'>
+                <CarsIcon className='icon' />
+                <h3>Fleet Liquidation</h3>
+                <p>
+                  Drive45 technicians are very proficient with the Evaluation
+                  and Liquidation of all mobile assets with a hassle free
+                  process.
+                </p>
+              </div>
+              <div className='box box3'>
+                <SettingsIcon className='icon' />
+                <h3>Fleet Maintenance</h3>
+                <p>
+                  Drive45 to take over and handle the maintenance of existing
+                  customer owned fleet of cars and trucks.
+                </p>
+              </div>
+              <div className='box box4'>
+                <HireIcon className='icon' />
+                <h3>Hire Purchase</h3>
+                <p>
+                  Stress free & flexible structured rent to own services for
+                  salary earners, with premium value-added services, built to
+                  eliminate the stress of mobility within the urban cities.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -98,11 +111,11 @@ const View = styled.section`
     position: absolute;
     top: 900px;
     left: 0;
-    width: 800px;
     z-index: 2;
+    width: 700px;
 
     @media ${device.phone} {
-      top: 1150px;
+      top: 1350px;
     }
   }
 
@@ -207,84 +220,103 @@ const View = styled.section`
 
         @media ${device.phone} {
           width: 100%;
+          height: 1030px;
           border-radius: 20px;
           margin-left: 0;
           margin-top: 30px;
         }
 
-        .box {
-          width: 390px;
-          height: 400px;
-          background: #ffffff;
-          box-shadow: 0px 36.7197px 75.8084px rgba(0, 0, 0, 0.07);
-          border-radius: 38.2798px;
-          padding: 40px 50px;
-
-          @media ${device.phone} {
-            width: 200px;
-            height: 210px;
-            border-radius: 20px;
-            padding: 15px;
-          }
-
-          .icon {
-            @media ${device.phone} {
-              display: block;
-            }
-          }
-
-          h3 {
-            margin: 25px 0;
-            font-size: 2.2rem;
-            font-weight: 400;
-            line-height: 37.9px;
-
-            @media ${device.phone} {
-              font-size: 1rem;
-              margin: 5px 0;
-              line-height: 16px;
-              font-weight: 600;
-              text-align: left;
-            }
-          }
-
-          p {
-            line-height: 21.64px;
-
-            @media ${device.phone} {
-              font-size: 0.7rem;
-              line-height: 16px;
-            }
-          }
-        }
-
-        .box1 {
+        .boxes {
+          display: flex;
+          width: 840px;
+          justify-content: space-between;
+          flex-wrap: wrap;
           position: absolute;
           left: 135px;
           top: -50px;
+          z-index: 4;
 
           @media ${device.phone} {
-            left: 70px;
+            flex-direction: column;
+            left: 50px;
           }
-        }
-        .box2 {
-          position: absolute;
-          left: 135px;
-          bottom: -50px;
 
-          @media ${device.phone} {
-            left: 70px;
-            bottom: 180px;
-          }
-        }
-        .box3 {
-          position: absolute;
-          right: -163px;
-          top: 190px;
+          .box {
+            width: 390px;
+            height: 400px;
+            background: #ffffff;
+            box-shadow: 0px 36.7197px 75.8084px rgba(0, 0, 0, 0.07);
+            border-radius: 38.2798px;
+            padding: 40px 50px;
+            margin-bottom: 40px;
 
-          @media ${device.phone} {
-            right: 50px;
+            @media ${device.phone} {
+              width: 240px;
+              height: 210px;
+              border-radius: 20px;
+              padding: 15px;
+              margin-bottom: 20px;
+            }
+
+            .icon {
+              @media ${device.phone} {
+                display: block;
+              }
+            }
+
+            h3 {
+              margin: 25px 0;
+              font-size: 2.2rem;
+              font-weight: 400;
+              line-height: 37.9px;
+
+              @media ${device.phone} {
+                font-size: 1rem;
+                margin: 5px 0;
+                line-height: 16px;
+                font-weight: 600;
+                text-align: left;
+              }
+            }
+
+            p {
+              line-height: 21.64px;
+
+              @media ${device.phone} {
+                font-size: 0.7rem;
+                line-height: 16px;
+              }
+            }
           }
+
+          /* .box1 {
+            position: absolute;
+            left: 135px;
+            top: -50px;
+
+            @media ${device.phone} {
+              left: 70px;
+            }
+          }
+          .box2 {
+            position: absolute;
+            left: 135px;
+            bottom: -50px;
+
+            @media ${device.phone} {
+              left: 70px;
+              bottom: 180px;
+            }
+          }
+          .box3 {
+            position: absolute;
+            right: -163px;
+            top: 190px;
+
+            @media ${device.phone} {
+              right: 50px;
+            }
+          } */
         }
       }
     }

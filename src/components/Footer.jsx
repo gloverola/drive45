@@ -43,7 +43,7 @@ const Footer = () => {
                 <TwitterLogo />
               </a>
             </div>
-            <p>©{new Date().getFullYear()}. Drive45.ng</p>
+            <p>©{new Date().getFullYear()}. Drive45mobility.com</p>
           </div>
         </div>
         <div className='col2'>
@@ -68,7 +68,7 @@ const Footer = () => {
           <h3>Newsletter</h3>
           <p>
             Sign up now for our mailing list to get all latest news & updates
-            from Drive45.ng
+            from Drive45mobility.com
           </p>
           <input type='email' name='email' placeholder='johndoe@gmail.com' />
           <button>
