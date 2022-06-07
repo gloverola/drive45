@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@emailjs/browser", "npm:3.6.2"],\
             ["@svgr/webpack", "npm:6.2.1"],\
             ["eslint", "npm:8.15.0"],\
             ["eslint-config-next", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:12.1.6"],\
@@ -42,7 +43,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.1.0"],\
             ["react-dom", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:18.1.0"],\
             ["react-elastic-carousel", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:0.11.5"],\
+            ["react-hot-toast", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:2.2.0"],\
             ["react-is", "npm:18.1.0"],\
+            ["react-loader-spinner", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:5.1.5"],\
             ["styled-components", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:5.3.5"]\
           ],\
           "linkType": "SOFT"\
@@ -2392,6 +2395,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@emailjs/browser", [\
+        ["npm:3.6.2", {\
+          "packageLocation": "./.yarn/cache/@emailjs-browser-npm-3.6.2-f90207028a-605deffac6.zip/node_modules/@emailjs/browser/",\
+          "packageDependencies": [\
+            ["@emailjs/browser", "npm:3.6.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@emotion/is-prop-valid", [\
         ["npm:0.8.8", {\
           "packageLocation": "./.yarn/cache/@emotion-is-prop-valid-npm-0.8.8-261a0f2426-bb7ec6d48c.zip/node_modules/@emotion/is-prop-valid/",\
@@ -3880,6 +3892,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["drive45", "workspace:."],\
+            ["@emailjs/browser", "npm:3.6.2"],\
             ["@svgr/webpack", "npm:6.2.1"],\
             ["eslint", "npm:8.15.0"],\
             ["eslint-config-next", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:12.1.6"],\
@@ -3889,7 +3902,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.1.0"],\
             ["react-dom", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:18.1.0"],\
             ["react-elastic-carousel", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:0.11.5"],\
+            ["react-hot-toast", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:2.2.0"],\
             ["react-is", "npm:18.1.0"],\
+            ["react-loader-spinner", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:5.1.5"],\
             ["styled-components", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:5.3.5"]\
           ],\
           "linkType": "SOFT"\
@@ -4708,6 +4723,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ignore", "npm:5.2.0"],\
             ["merge2", "npm:1.4.1"],\
             ["slash", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["goober", [\
+        ["npm:2.1.9", {\
+          "packageLocation": "./.yarn/cache/goober-npm-2.1.9-899db49bd2-bb986e2f9a.zip/node_modules/goober/",\
+          "packageDependencies": [\
+            ["goober", "npm:2.1.9"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:725503fcc8832da32432eb441b13aedc9aba8f4c1ef3b59c25a1a2a26fd26db252af9f1f5c1cb099fa13bc15f372cbd7f08b6a43edcc38e3ea0bf6fbe50c8697#npm:2.1.9", {\
+          "packageLocation": "./.yarn/__virtual__/goober-virtual-880f866f56/0/cache/goober-npm-2.1.9-899db49bd2-bb986e2f9a.zip/node_modules/goober/",\
+          "packageDependencies": [\
+            ["goober", "virtual:725503fcc8832da32432eb441b13aedc9aba8f4c1ef3b59c25a1a2a26fd26db252af9f1f5c1cb099fa13bc15f372cbd7f08b6a43edcc38e3ea0bf6fbe50c8697#npm:2.1.9"],\
+            ["@types/csstype", null],\
+            ["csstype", null]\
+          ],\
+          "packagePeers": [\
+            "@types/csstype",\
+            "csstype"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5743,6 +5780,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-hot-toast", [\
+        ["npm:2.2.0", {\
+          "packageLocation": "./.yarn/cache/react-hot-toast-npm-2.2.0-bb9861336b-bb34ddc8ad.zip/node_modules/react-hot-toast/",\
+          "packageDependencies": [\
+            ["react-hot-toast", "npm:2.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:2.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-hot-toast-virtual-725503fcc8/0/cache/react-hot-toast-npm-2.2.0-bb9861336b-bb34ddc8ad.zip/node_modules/react-hot-toast/",\
+          "packageDependencies": [\
+            ["react-hot-toast", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:2.2.0"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["goober", "virtual:725503fcc8832da32432eb441b13aedc9aba8f4c1ef3b59c25a1a2a26fd26db252af9f1f5c1cb099fa13bc15f372cbd7f08b6a43edcc38e3ea0bf6fbe50c8697#npm:2.1.9"],\
+            ["react", "npm:18.1.0"],\
+            ["react-dom", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:18.1.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-is", [\
         ["npm:16.13.1", {\
           "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-f7a19ac349.zip/node_modules/react-is/",\
@@ -5755,6 +5819,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-is-npm-18.1.0-6642a99f70-d206a0fe67.zip/node_modules/react-is/",\
           "packageDependencies": [\
             ["react-is", "npm:18.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-loader-spinner", [\
+        ["npm:5.1.5", {\
+          "packageLocation": "./.yarn/cache/react-loader-spinner-npm-5.1.5-14722d7b02-2e5dd2beca.zip/node_modules/react-loader-spinner/",\
+          "packageDependencies": [\
+            ["react-loader-spinner", "npm:5.1.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:5.1.5", {\
+          "packageLocation": "./.yarn/__virtual__/react-loader-spinner-virtual-c3a9c007e4/0/cache/react-loader-spinner-npm-5.1.5-14722d7b02-2e5dd2beca.zip/node_modules/react-loader-spinner/",\
+          "packageDependencies": [\
+            ["react-loader-spinner", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:5.1.5"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["react", "npm:18.1.0"],\
+            ["react-dom", "virtual:f0f1419f92bfaaf0fca74e5492cd5fb0bb7a5d4a8aedd16c12ede474d6753a84c208acf5f73c213f0b8fccb71fd5aa89ecee924dbc7d346a6edfd9008b9fbc1c#npm:18.1.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\

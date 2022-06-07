@@ -1,9 +1,38 @@
 import { device } from "constants/breakpoints";
-import React from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import EnterIcon from "../../../public/assets/enter-icon.svg";
+import emailjs from "@emailjs/browser";
+import { Oval } from "react-loader-spinner";
+import toast from "react-hot-toast";
 
 const ContactSection = () => {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+
+  const sendEmail = (e) => {
+    setLoading(true);
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ra6cw5t",
+        "template_ud790qz",
+        form.current,
+        "TWF6QSH0kscyhfZmf"
+      )
+      .then(
+        (result) => {
+          setLoading(false);
+          toast.success("Message sent successfully!");
+        },
+        (error) => {
+          setLoading(false);
+          toast.error("Unable to send message, please try again");
+        }
+      );
+  };
+
   return (
     <View>
       <div className='content'>
@@ -19,25 +48,52 @@ const ContactSection = () => {
         </div>
 
         <div className='row'>
-          <form>
+          <form onSubmit={sendEmail} ref={form}>
             <div className='input'>
               <label htmlFor='name'>Full Name</label>
-              <input type='text' placeholder='Enter here' />
+              <input
+                type='text'
+                name='user_name'
+                placeholder='Enter here'
+                required
+              />
             </div>
             <div className='input'>
-              <label htmlFor='name'>Email Address</label>
-              <input type='email' placeholder='Enter here' />
+              <label htmlFor='user_email'>Email Address</label>
+              <input
+                type='email'
+                name='user_email'
+                placeholder='Enter here'
+                required
+              />
             </div>
             <div className='input'>
-              <label htmlFor='name'>Phone Number</label>
-              <input type='text' placeholder='Enter here' />
+              <label htmlFor='user_phone'>Phone Number</label>
+              <input
+                type='text'
+                name='user_phone'
+                placeholder='Enter here'
+                required
+              />
             </div>
             <div className='input'>
-              <label htmlFor='name'>Message</label>
-              <textarea rows={7} type='text' placeholder='Enter here' />
+              <label htmlFor='message'>Message</label>
+              <textarea
+                rows={7}
+                type='text'
+                name='message'
+                placeholder='Enter here'
+                required
+              />
             </div>
             <button type='submit'>
-              SEND MESSAGE <EnterIcon className='icon' />
+              {loading ? (
+                <Oval color='#FFF' height={30} width={30} />
+              ) : (
+                <>
+                  SEND MESSAGE <EnterIcon className='icon' />
+                </>
+              )}
             </button>
           </form>
           <div className='image-view'>

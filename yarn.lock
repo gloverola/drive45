@@ -1365,6 +1365,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emailjs/browser@npm:^3.6.2":
+  version: 3.6.2
+  resolution: "@emailjs/browser@npm:3.6.2"
+  checksum: 605deffac6b09789a417e68093fc105906a1e75c046cda5de457ea00b0d8a75c1796f2c3ae17362c134669fb54f8a3731a78ca6fdac0bf8a78c2abcea2cb20c0
+  languageName: node
+  linkType: hard
+
 "@emotion/is-prop-valid@npm:^0.8.2":
   version: 0.8.8
   resolution: "@emotion/is-prop-valid@npm:0.8.8"
@@ -2459,6 +2466,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drive45@workspace:."
   dependencies:
+    "@emailjs/browser": ^3.6.2
     "@svgr/webpack": ^6.2.1
     eslint: 8.15.0
     eslint-config-next: 12.1.6
@@ -2468,7 +2476,9 @@ __metadata:
     react: 18.1.0
     react-dom: 18.1.0
     react-elastic-carousel: ^0.11.5
+    react-hot-toast: ^2.2.0
     react-is: ^18.1.0
+    react-loader-spinner: ^5.1.5
     styled-components: ^5.3.5
   languageName: unknown
   linkType: soft
@@ -3100,6 +3110,15 @@ __metadata:
     merge2: ^1.4.1
     slash: ^3.0.0
   checksum: b4be8885e0cfa018fc783792942d53926c35c50b3aefd3fdcfb9d22c627639dc26bd2327a40a0b74b074100ce95bb7187bfeae2f236856aa3de183af7a02aea6
+  languageName: node
+  linkType: hard
+
+"goober@npm:^2.1.1":
+  version: 2.1.9
+  resolution: "goober@npm:2.1.9"
+  peerDependencies:
+    csstype: ^3.0.10
+  checksum: bb986e2f9a451e278986f530f3b1a389f2b95f41770fc94ff35338d1f1732998e423c7a858597e37378d97f278ccd1802d0842e5ef809daca62b867cc676c999
   languageName: node
   linkType: hard
 
@@ -3982,6 +4001,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-hot-toast@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "react-hot-toast@npm:2.2.0"
+  dependencies:
+    goober: ^2.1.1
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
+  checksum: bb34ddc8ada14cbd75a37f14d2563412174e23276eb05e9fb23a031b6d8374ca190cefa1940692f4371529ddafeb2d4b8d3e5023187c2851ec8cb247461553ee
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1, react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -3993,6 +4024,16 @@ __metadata:
   version: 18.1.0
   resolution: "react-is@npm:18.1.0"
   checksum: d206a0fe6790851bff168727bfb896de02c5591695afb0c441163e8630136a3e13ee1a7ddd59fdccddcc93968b4721ae112c10f790b194b03b35a3dc13a355ef
+  languageName: node
+  linkType: hard
+
+"react-loader-spinner@npm:^5.1.5":
+  version: 5.1.5
+  resolution: "react-loader-spinner@npm:5.1.5"
+  peerDependencies:
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 2e5dd2beca5338ab9b7b9b33a8a2364ee5296d8aa32f3a7b2c82b4471e55e7768004c97d30ea9d20fd35a13aa625d24b38e960ad4ca0382d7d6eece14af5f4f5
   languageName: node
   linkType: hard
 
