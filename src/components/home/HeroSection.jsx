@@ -83,7 +83,7 @@ const View = styled.section`
   .image1 {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -100px;
 
     @media ${device.phone} {
       display: none;
@@ -93,7 +93,7 @@ const View = styled.section`
   .image2 {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -100px;
 
     @media ${device.phone} {
       display: none;

@@ -99,8 +99,9 @@ export default WhySction;
 
 const View = styled.section`
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   position: relative;
+  margin-top: 200px;
 
   .content {
     width: 1200px;
@@ -119,6 +120,7 @@ const View = styled.section`
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin-bottom: 100px;
 
       .item {
         width: 23%;

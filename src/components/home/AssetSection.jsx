@@ -66,7 +66,7 @@ const View = styled.section`
   width: 100vw;
   height: 100%;
   position: relative;
-  margin-top: 400px;
+  margin-top: 300px;
 
   @media ${device.phone} {
     margin-top: 500px;

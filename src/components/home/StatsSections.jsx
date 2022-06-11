@@ -69,9 +69,9 @@ export default StatsSction;
 
 const View = styled.section`
   width: 100vw;
-  height: 90vh;
+  height: 100%;
   position: relative;
-  margin-top: 600px;
+  margin-top: 200px;
 
   @media ${device.phone} {
     margin-top: 150px;
@@ -82,7 +82,7 @@ const View = styled.section`
 
   .image1 {
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     left: 0;
 
     img {
@@ -96,7 +96,7 @@ const View = styled.section`
 
   .image2 {
     position: absolute;
-    bottom: -50px;
+    bottom: 50px;
     right: 0;
 
     @media ${device.phone} {
