@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
 import EnterIcon from "../../../public/assets/enter-icon.svg";
 import { device } from "constants/breakpoints";
 
@@ -59,9 +60,11 @@ const HeroSection = () => {
         </div>
 
         <div className='cta'>
-          <button>
-            Get started <EnterIcon className='icon' />
-          </button>
+          <Link href='/contact'>
+            <a>
+              Get started <EnterIcon className='icon' />
+            </a>
+          </Link>
         </div>
       </div>
     </View>
@@ -195,7 +198,8 @@ const View = styled.section`
         margin-top: 30px;
       }
 
-      button {
+      button,
+      a {
         padding: 20px 50px;
         background-color: ${(props) => props.theme.colors.green};
         border: none;

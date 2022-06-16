@@ -85,11 +85,14 @@ const View = styled.section`
     bottom: 100px;
     left: 0;
 
+    @media ${device.phone} {
+      bottom: -200px;
+    }
+
     img {
       @media ${device.phone} {
         width: 200px;
         height: 150px;
-        bottom: -100px;
       }
     }
   }
@@ -100,7 +103,7 @@ const View = styled.section`
     right: 0;
 
     @media ${device.phone} {
-      bottom: -10px;
+      bottom: -200px;
     }
 
     img {
@@ -110,7 +113,6 @@ const View = styled.section`
       @media ${device.phone} {
         width: 180px;
         height: 170px;
-        bottom: 0;
       }
     }
   }

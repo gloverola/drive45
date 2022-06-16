@@ -32,7 +32,7 @@ const advantages = [
 const AdvantageSection = () => {
   return (
     <View>
-      <img src='/assets/car6.png' alt='' />
+      <img src='/assets/car6.png' alt='' className='car6' />
       <div className='content'>
         <h3>Our Advantage</h3>
 
@@ -74,7 +74,7 @@ const View = styled.section`
   img {
     position: absolute;
     bottom: 50px;
-    right: 0;
+    right: -150px;
 
     @media ${device.phone} {
       bottom: -70px;

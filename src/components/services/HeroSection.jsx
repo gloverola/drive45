@@ -122,7 +122,7 @@ const View = styled.section`
   .car {
     position: absolute;
     bottom: 0px;
-    right: 0;
+    right: -100px;
     z-index: 2;
 
     @media ${device.phone} {
@@ -288,35 +288,6 @@ const View = styled.section`
               }
             }
           }
-
-          /* .box1 {
-            position: absolute;
-            left: 135px;
-            top: -50px;
-
-            @media ${device.phone} {
-              left: 70px;
-            }
-          }
-          .box2 {
-            position: absolute;
-            left: 135px;
-            bottom: -50px;
-
-            @media ${device.phone} {
-              left: 70px;
-              bottom: 180px;
-            }
-          }
-          .box3 {
-            position: absolute;
-            right: -163px;
-            top: 190px;
-
-            @media ${device.phone} {
-              right: 50px;
-            }
-          } */
         }
       }
     }
@@ -348,6 +319,7 @@ const View = styled.section`
           flex-direction: column;
           position: absolute;
           top: -90px;
+          z-index: 5;
 
           @media ${device.phone} {
             left: 30px;
